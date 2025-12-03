@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities functions</title>
+    <link rel="stylesheet" href="./css/template-JS4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <img src="./imgs/javascript-logo-removebg-preview.png" alt="JavaScript Logo" class="logo">
+            <div class="header-text">
+                <h1>Learning JavaScript - Functions:</h1>
+                <p>Visual practice & notes</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="card">
+            <!-- content -->
+
+            <h2>Activity 1: Borders on Images with functions</h2><br>
+
+            <br>
+            
+            <!-- Card code block example -->
+            <div class="code-block">
+
+                <div class="code-header">
+                    <span class="code-title">kittyBorders.js</span>
+                </div>
+
+                <div class="divBox">
+                    <img id="img-1" src="https://plus.unsplash.com/premium_photo-1673967770669-91b5c2f2d0ce?q=80&w=730&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img id="img-2" src="https://plus.unsplash.com/premium_photo-1673967770669-91b5c2f2d0ce?q=80&w=730&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img id="img-3" src="https://plus.unsplash.com/premium_photo-1673967770669-91b5c2f2d0ce?q=80&w=730&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+
+            </div>
+                    <br><br>
+            <h2>Activity 2: Borders with Different Colors</h2>
+            
+              <!-- Card code block example -->
+            <div class="code-block">
+
+                <div class="code-header">
+                    <span class="code-title">kittyBorders_colors.js</span>
+                </div>
+
+                <div class="divBox-kitties">
+                    <img id="img-1" src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img id="img-2" src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img id="img-3" src="https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                </div>
+
+            </div>
+                <br><br>
+            <h2>Activity 3: Increase and Decrease paragraph Font-size:</h2>
+            <h3>Creating a function with parameters to modify the DOM</h3>
+            <p>Create a webpage with a paragraph containing the text “Font Size Control”, and add 4 buttons:</p>
+            <ul>
+                <li>Increase by 5px</li>
+                <li>Decrease by 5px</li>
+                <li>Increase by 1px</li>
+                <li>Decrease by 1px</li>
+            </ul>
+            <ol>
+                <li>Create a function called changeFontSize() with a default parameter value of 1.</li>
+                <li>Inside the function, select the paragraph element and update its current font-size by adding the value passed as an argument.</li>
+                <li>Call the function with the appropriate arguments for each button (for example: changeFontSize(5), changeFontSize(-5), changeFontSize(1), changeFontSize(-1)).</li>
+            </ol>
+
+
+              <!-- Card code block example -->
+            <div class="code-block">
+
+                <div class="code-header">
+                    <span class="code-title">sizing_paragraph.js</span>
+                </div>
+
+                <div class="center">
+                   <P id="outputParagraph"></P>
+                   <button id="decreaseBy5" class="btn">Decrease By 5</button>
+                   <button id="decreaseBy1" class="btn">Decrease By 1</button>
+                   <button id="increaseBy1" class="btn">Increase By 1</button>
+                   <button id="increaseBy5" class="btn">Increase By 5</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    
+    
+    <footer class="main-footer">
+        <p>Leandro Funes <a href="https://github.com/Quietchie-Code-Lean"><i class="fa-brands fa-square-github fs-xxl"></i></a> Practice file Fullstack_JS G105</p>
+    </footer>
+    
+    
+   <!--  external script  -->
+    <script src="./js/intro_functions.js"></script>
+
+
+</body>
+</html>

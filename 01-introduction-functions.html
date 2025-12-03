@@ -24,41 +24,92 @@
             <!-- content -->
 
             <h2>Introduction to functions:</h2><br>
-            <h3>Context excersice:</h3>
 
             <p>
-                Let's perform the following exercise to calculate a person's BMI. For this,
-                the user will need to enter two values: height in meters and weight in kilograms.
-            </p>
-<ol>
-    <li>Create the variable `weight` and assign to an input value.</li>
-    <li>Create the variable `height` and assign to an input value.</li>
-    <li>If the BMI is between 18.5 and 24.9, then display "Has a normal BMI" within a paragraph.</li>
-    <li>Create a conditional statement that evaluates whether the BMI is greater than 25, and then prints "Has a high BMI" to the console.</li>
-</ol>
+               Functions are sets of instructions that we can program one time and use every time we need them. Sometimes we will use functions created by other people, and sometimes we will have to create our own.
+               “Using a function” is synonymous with calling or invoking a function.
             </p>
             <br>
             
             <!-- Card code block example -->
             <div class="code-block">
+
                 <div class="code-header">
-                    <span class="code-title">bmi.js</span>
+                    <span class="code-title">functions.js</span>
                 </div>
+
                 <div class="center">
-
-                    <label for="insert-weight">Enter weight(kgs):</label><br>
-                    <input type="number" id="insert-weight"><br>
-
-                    <label for="insert-height">Enter height(mts):</label><br>
-                    <input type="number" id="insert-height"><br>
-                    <br>
-                    <button id="bmi-btn" class="btn">CHECK BMI</button>
-                    <br><br>
-                    <p id="output-bmi"></p>
-
+                    <pre><code>
+                        function pintar_negro() {
+                            elemento = document.querySelector("body");
+                            elemento.style.backgroundColor = "black";
+                        }
+                    
+                        pintar_negro();
+                    </code></pre>
                 </div>
 
             </div>
+                    <br><br>
+            <h3>Functions and Parameters:</h3>
+            <p>Parameters allow us to input values into a function. The parameters go inside the parentheses when defining a function. The values passed when calling the function are formally known as arguments.</p>
+            <p>The term "arguments" and "parameters" are typically confused at first:
+
+                <ul>
+                    <li>When defining a function → we use parameters</li>
+                    <li>When executing a function → we pass arguments</li>
+                </ul>
+            </p>
+              <!-- Card code block example -->
+            <div class="code-block">
+
+                <div class="code-header">
+                    <span class="code-title">parameters.js</span>
+                </div>
+
+                <div class="center">
+                    <pre><code>         
+                        pintar = function(color){
+                        elemento = document.querySelector("body")
+                        elemento.style.backgroundColor = color
+                        }
+                        pintar("black");
+                    </code></pre>
+                </div>
+
+            </div>
+                <br><br>
+            <h3>Functions with Multiple Parameters:</h3>
+            <p>Functions can have more than one parameter. To do this, we simply separate them with commas when defining the function. When calling the function, we must pass the arguments in the same order in which the parameters were defined.</p>
+
+              <!-- Card code block example -->
+            <div class="code-block">
+
+                <div class="code-header">
+                    <span class="code-title">multiple_parameters.js</span>
+                </div>
+
+                <div class="center">
+                   
+                    <pre>
+                        
+                        <code>
+        Event within a tag:
+        onclick="pintar('black')" Pintar negro
+        onclick="pintar('red')" Pintar rojo
+        onclick="pintar('green')" Pintar verde
+
+        function pintar(color) {
+            elemento = document.querySelector("body");
+            elemento.style.backgroundColor = color;
+        }
+    </code>
+</pre>
+                    
+                </div>
+
+            </div>
+
         </section>
     </main>
     
@@ -69,7 +120,7 @@
     
     
    <!--  external script  -->
-    <script src="./js/imc.js"></script>
+    <script src="./js/intro_functions.js"></script>
 
 
 </body>
