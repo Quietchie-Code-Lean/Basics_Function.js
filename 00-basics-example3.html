@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"
+/>
+<title>Paint 3 colors</title>
+</head>
+<body>
+    <button onclick="paint('black')"> Paint black</button>
+    <button onclick="paint('red')"> Paint Red</button>
+    <button onclick="paint('green')"> Paint Green</button>
+    <button onclick="paint('yellow')"> Paint Yellow</button>
+    <button onclick="paint('blue')"> Paint Blue</button>
+    
+    <script>
+        function paint(color) {
+        elemento = document.querySelector("body");
+        elemento.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>

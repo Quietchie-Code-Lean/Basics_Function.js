@@ -46,3 +46,27 @@ function addBorderColor(element, color){
         element.style.border = "";
     }
 }
+
+/*  Modifying fontSize paragraph through buttons */
+
+let decreBy5 = document.querySelector('#decreaseBy5');
+let decreBy1 = document.querySelector('#decreaseBy1');
+let increBy1 = document.querySelector('#increaseBy1');
+let increBy5 = document.querySelector('#increaseBy5');
+let outputParagraph = document.querySelector('#outputParagraph')
+
+    
+let currentFontSize = outputParagraph.style.fontSize= 12 +'px';
+    currentFontSize = parseFloat(currentFontSize)
+    
+    function increDecre(fontSize){
+        let newFontSize = currentFontSize + fontSize;
+        outputParagraph.style.fontSize = newFontSize + "px";
+    }
+
+
+decreBy5.addEventListener('click', () =>{increDecre(-5)});
+decreBy1.addEventListener('click', () =>{increDecre(-1)});
+increBy1.addEventListener('click', () =>{increDecre(1)});
+increBy5.addEventListener('click', () =>{increDecre(5)});
+
