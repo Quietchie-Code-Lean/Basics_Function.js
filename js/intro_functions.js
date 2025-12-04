@@ -56,12 +56,14 @@ let increBy5 = document.querySelector('#increaseBy5');
 let outputParagraph = document.querySelector('#outputParagraph')
 
     
-let currentFontSize = outputParagraph.style.fontSize= 12 +'px';
+let currentFontSize = outputParagraph.style.fontSize= 12 + 'px';
     currentFontSize = parseFloat(currentFontSize)
     
+
     function increDecre(fontSize){
         let newFontSize = currentFontSize + fontSize;
         outputParagraph.style.fontSize = newFontSize + "px";
+        currentFontSize = newFontSize;
     }
 
 
