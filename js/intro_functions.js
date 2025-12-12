@@ -72,3 +72,60 @@ decreBy1.addEventListener('click', () =>{increDecre(-1)});
 increBy1.addEventListener('click', () =>{increDecre(1)});
 increBy5.addEventListener('click', () =>{increDecre(5)});
 
+
+
+
+/* Create operations functions */
+
+
+/* Function byTwo(){...} */
+
+const inputBy2 = document.querySelector('#input_by_2');
+const outputBy2 = document.querySelector('#output_by_2')
+const btnByTwo = document.querySelector('#calculate_by_2');
+
+function byTwo(){
+    
+    let outcome1 = inputBy2.value * 2;
+    outputBy2.innerHTML = outcome1;
+    return outcome1;
+}
+
+btnByTwo.addEventListener('click', byTwo);
+
+
+/* Function byFive(){...} */
+
+const inputBy5 = document.querySelector('#input_by_5');
+const outputBy5 = document.querySelector('#output_by_5')
+const btnByFive = document.querySelector('#calculate_by_5');
+
+
+function byFive(){
+    let outcome2 = inputBy5.value * 5;
+    outputBy5.innerHTML = outcome2;
+    return outcome2;
+}
+
+btnByFive.addEventListener('click', byFive);
+
+
+/* Function mulptiply(num1, num2){...} */
+
+const input1 = document.querySelector('#input1');
+const input2 = document.querySelector('#input2');
+const outputMultiply = document.querySelector('#output_multiply');
+const btnMultiply = document.querySelector('#calculate_multiply');
+
+function multiply(num1, num2){
+    let outcome3 = num1 * num2;
+    outputMultiply.innerHTML = outcome3
+    return outcome3;
+}
+
+btnMultiply.addEventListener('click', function(){
+    let num1 = parseFloat(input1.value);
+    let num2 = parseFloat(input2.value);
+    multiply(num1, num2);
+});
+
